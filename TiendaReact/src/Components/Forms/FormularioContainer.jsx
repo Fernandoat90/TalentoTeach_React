@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { supabase } from "../../supabaseClient";
 import { FormularioProducto } from "./FormularioProductos";
-import {supabase} from "../../supabaseClient";
 
 export function FormularioContainer(){
 
