@@ -1,0 +1,33 @@
+footer{
+    width:100%;
+    margin-top:0;
+    background-color:black;
+    text-align: center;
+}
+
+.footContain{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 24px;
+    color:white;
+}
+
+
+.img {
+    width: 200px;
+    height: 100px;
+    margin-top:20px;
+    border-radius: 50%;
+    object-fit: contain;
+    
+}
+
+.imgMia {
+    width: 200px;
+    height: 150px;
+    margin-top:20px;
+    border-radius: 50%;
+    object-fit: contain;
+}

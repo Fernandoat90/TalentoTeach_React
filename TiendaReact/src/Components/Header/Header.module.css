@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width:400px;
+    height:110px;
+}
+
+.header {
+    background-color: rgb(101, 101, 103);
+    width: 100%;
+}
+
+
+
+.headerTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headerTop h1 {
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
+
+
+.menuButton {
+    display: none;
+    position: absolute;
+    right: 20px;
+
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+.nav {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    background-color: rgb(194, 197, 194);
+    margin: 5px 30px;
+    border-radius: 20%;
+}
+
+.nav li:hover {
+    background-color: rgb(101, 147, 186);
+    transition: 0.5s;
+}
+
+.nav a {
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+
+
+.cart {
+    font-size: 16px;
+}
+
+.contador {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    margin-left: -2px;
+    vertical-align: top;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .headerTop {
+        justify-content: center;
+    }
+
+    .headerTop h1 {
+        font-size: 24px;
+    }
+
+
+
+    .menuButton {
+        display: block;
+    }
+
+
+
+.nav {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition:
+        max-height 1s ease,
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.nav.navAbierto {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav li {
+        width: 90%;
+        margin: 5px 0;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .nav a {
+        padding: 12px;
+    }
+}
+

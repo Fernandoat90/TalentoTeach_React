@@ -1,0 +1,38 @@
+form {
+    background-color: rgb(161, 160, 160);
+    border-radius: 10%;
+    width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgb(120, 119, 119);
+    color:rgb(251, 225, 225);
+}
+
+form h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+}

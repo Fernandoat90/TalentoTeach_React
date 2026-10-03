@@ -1,0 +1,18 @@
+.inicio{
+    background-image: url('/img/hotFond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 450px;
+    
+    margin-top:20px;
+}
+
+@media (max-width: 600px) {
+    
+    .inicio{
+        height:300px;
+    }
+        
+}
