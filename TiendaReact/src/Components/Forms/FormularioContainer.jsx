@@ -40,7 +40,7 @@ export function FormularioContainer(){
     }
 
 
-    const ApiKey='d910754160ee19a1528753c2e9098ff0';
+    const ApiKey= import.meta.env.VITE_IMGBB_API_KEY;
 
     const formData = new FormData();
 
