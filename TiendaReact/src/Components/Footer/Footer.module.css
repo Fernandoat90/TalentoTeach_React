@@ -55,8 +55,7 @@ footer {
         height: 110px;
         margin-top: 10px;
     }
-}
-}
+
 
 .imgMia {
     width: 200px;
@@ -64,4 +63,5 @@ footer {
     margin-top:20px;
     border-radius: 50%;
     object-fit: contain;
+}
 }
