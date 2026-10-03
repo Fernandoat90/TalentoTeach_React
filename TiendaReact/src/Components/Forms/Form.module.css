@@ -39,7 +39,6 @@ form button {
     cursor: pointer;
 }
 
-/* Celulares */
 @media (max-width: 600px) {
 
     form {
@@ -63,9 +62,9 @@ form button {
         padding: 12px;
         font-size: 16px;
     }
-}
 
 form button {
     padding: 10px;
     cursor: pointer;
+}
 }
