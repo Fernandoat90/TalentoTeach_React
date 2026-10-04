@@ -69,7 +69,8 @@ export function FormularioContainer(){
 
         console.log("Imagen subida:", urlImagen);
 
-        const formatearTexto = (texto)
+        const formatearTexto = (texto)=>
+                texto
                 .trim()
                 .split("")
                 .map((palabra,index)=>
