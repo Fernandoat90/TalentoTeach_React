@@ -1,8 +1,8 @@
-form {
+.form {
     background-color: rgb(161, 160, 160);
-    border-radius: 10%;
+    border-radius: 10px;
     width: 400px;
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 20px);
     margin: 30px auto;
     padding: 25px;
     box-sizing: border-box;
@@ -13,35 +13,35 @@ form {
     color: rgb(251, 225, 225);
 }
 
-form h3 {
+.form h3 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-form div {
+.form div {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-form label {
+.form label {
     font-weight: bold;
 }
 
-form input {
+.form input {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
 }
 
-form button {
+.form button {
     padding: 10px;
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
 
-    form {
+@media (max-width: 600px) {
+    .form {
         width: 100%;
         max-width: calc(100% - 20px);
         padding: 20px;
@@ -49,16 +49,16 @@ form button {
         border-radius: 15px;
     }
 
-    form h3 {
+    .form h3 {
         font-size: 20px;
     }
 
-    form input {
+    .form input {
         padding: 12px;
         font-size: 16px;
     }
 
-    form button {
+    .form button {
         padding: 12px;
         font-size: 16px;
     }
