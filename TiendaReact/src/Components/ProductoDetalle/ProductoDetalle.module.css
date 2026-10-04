@@ -18,4 +18,5 @@
 
 h3{
     font-size: 32px;
+    overflow-wrap: break-word;
 }
