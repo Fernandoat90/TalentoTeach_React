@@ -40,7 +40,7 @@ export function FormularioContainer(){
     }
 
 
-    const ApiKey= import.meta.env.VITE_IMGBB_API_KEY;
+    const ApiKey=import.meta.env.VITE_IMGBB_API_KEY;
 
     const formData = new FormData();
 
@@ -69,7 +69,8 @@ export function FormularioContainer(){
 
         console.log("Imagen subida:", urlImagen);
 
-        const formatearTexto = (texto)
+        const formatearTexto = (texto)=>
+                texto
                 .trim()
                 .split("")
                 .map((palabra,index)=>

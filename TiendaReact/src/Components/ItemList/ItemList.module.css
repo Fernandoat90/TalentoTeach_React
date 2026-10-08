@@ -2,17 +2,6 @@ h2{
     text-align: center;
 }
 
-/* .tarj{
-    border:3px solid grey;
-    max-width:80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding:20px;
-    margin:0% 20%
-} */
-
 .tarj {
     border: 3px solid grey;
     width: 70%;
@@ -24,15 +13,6 @@ h2{
     gap: 20px;
     box-sizing: border-box;
 }
-
-/* .tarjCont{
-    border:1px solid white;
-    background-color: rgb(129, 19, 41);
-    border-radius:10%;
-    min-width:11em;
-    margin:10px 20px;
-    padding:20px;
-} */
 
 .tarjCont {
     border: 1px solid white;
