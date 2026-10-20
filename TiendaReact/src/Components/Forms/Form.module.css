@@ -39,6 +39,27 @@
     cursor: pointer;
 }
 
+.form .botones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.form .del,
+.form .upd {
+    flex: 1;
+    font-weight: bolder;
+}
+
+.form .del {
+    background-color: red;
+    color:white;
+}
+
+.form .upd {
+    background-color: lightgreen;
+}
+
 
 @media (max-width: 600px) {
     .form {

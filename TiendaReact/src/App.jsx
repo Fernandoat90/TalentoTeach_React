@@ -5,6 +5,7 @@ import { Layout } from './Components/Layout/Layout.jsx';
 import ProductoDetalle from './Components/ProductoDetalle/ProductoDetalle.jsx';
 import Carrito from './Components/Carrito/Carrito.jsx';
 import styles from './App.module.css';
+import { ControlDelUp } from './Components/Forms/FormsDelUpdate/ControlDelUp.jsx';
 
 
 
@@ -17,6 +18,7 @@ return(
         <Route path="/productos" element={<ItemListContainer Mensaje={"Productos disponibles"} />} />
         <Route path="/form" element={<FormularioContainer />} />
         <Route path="/producto/:id" element={<ProductoDetalle />} />
+        <Route path="/administrar" element={<ControlDelUp />} />
         <Route path="/cart" element={<Carrito />}/>
     </Route>
     

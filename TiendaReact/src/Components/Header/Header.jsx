@@ -53,6 +53,12 @@ function Header() {
                     </li>
 
                     <li>
+                        <Link to="/administrar" onClick={cerrarMenu}>
+                            Administrar
+                        </Link>
+                    </li>
+
+                    <li>
                         <Link to="/cart" onClick={cerrarMenu}>
                             <span className={styles.cart}>🛒</span>
 
