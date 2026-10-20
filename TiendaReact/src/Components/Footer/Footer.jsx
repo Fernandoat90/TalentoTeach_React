@@ -6,11 +6,11 @@ function Footer(){
         <div className={styles.footContain}>
             <div>
                 <h3>Contacto</h3>
-                <a href="https://www.linkedin.com/in/fernando-torres-b13199237/" target="_blank">
+                <a href="https://www.linkedin.com/in/fernando-torres-b13199237/" target="_blank" rel="noopener noreferrer">
                     <img src="/img/linkedin.png" title="linkedin" className={styles.img} />
                 </a>
                 
-                <a href="https://github.com/Fernandoat90" target="_blank">
+                <a href="https://github.com/Fernandoat90" target="_blank" rel="noopener noreferrer">
                 <img src="/img/github.jpg" title="Github" className={styles.img}/>
                 </a>
                 

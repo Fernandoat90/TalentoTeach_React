@@ -11,25 +11,70 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
     font-size: 24px;
     color: white;
     padding: 20px;
     box-sizing: border-box;
+    width: 100%;
+}
+
+.footContain > div {
+    min-width: 0;
 }
 
 .img {
-    width: 200px;
-    height: 100px;
-    margin-top: 20px;
+    width: 150px;
+    height: 90px;
+    margin: 10px;
     border-radius: 50%;
     object-fit: contain;
-    
+    vertical-align: middle;
 }
 
 .imgMia {
-    width: 200px;
-    height: 150px;
-    margin-top: 20px;
+    width: 180px;
+    height: 130px;
+    margin: 10px;
     border-radius: 50%;
     object-fit: contain;
+}
+
+/* Tablets y celulares */
+@media (max-width: 700px) {
+    .footContain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 15px;
+        font-size: 18px;
+    }
+
+    .footContain > div {
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .footContain h3 {
+        font-size: 21px;
+        margin: 10px 0;
+    }
+
+    .footContain h4 {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+
+    .img {
+        width: 100px;
+        height: 70px;
+        margin: 8px;
+    }
+
+    .imgMia {
+        width: 140px;
+        height: 110px;
+        margin: 5px auto;
+    }
 }
