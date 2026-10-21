@@ -6,6 +6,8 @@ import ProductoDetalle from './Components/ProductoDetalle/ProductoDetalle.jsx';
 import Carrito from './Components/Carrito/Carrito.jsx';
 import styles from './App.module.css';
 import { ControlDelUp } from './Components/Forms/FormsDelUpdate/ControlDelUp.jsx';
+import { DeleteProduct } from './Components/Forms/FormsDelUpdate/DeleteComponent.jsx';
+import { UpdateProduct } from './Components/Forms/FormsDelUpdate/UpdateComponent.jsx';
 
 
 
@@ -20,6 +22,8 @@ return(
         <Route path="/producto/:id" element={<ProductoDetalle />} />
         <Route path="/administrar" element={<ControlDelUp />} />
         <Route path="/cart" element={<Carrito />}/>
+        <Route path="/eliminarProd" element={<DeleteProduct />} />
+        <Route path="/updateProd" element={<UpdateProduct />} />
     </Route>
     
   </Routes>

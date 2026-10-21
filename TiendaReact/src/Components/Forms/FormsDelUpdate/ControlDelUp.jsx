@@ -1,8 +1,10 @@
 import {useState} from "react";
 import styles from "../Form.module.css";
+import { useNavigate } from "react-router-dom";
 
 export function ControlDelUp(){
     const [id,setId]=useState("");
+    const navegate=useNavigate();
 
     const manejarAccion = (accion)=>{
         const idProducto= Number(id);
@@ -13,12 +15,14 @@ export function ControlDelUp(){
         }
 
         if(accion==="1"){
-            alert("Se va a eliminar el producto");
-            return;
+            navegate("/eliminarProd",{
+                state:{id:idProducto}
+            })
         }
         if(accion==="2"){
-            alert("Se va a modificar el producto");
-            return;
+            navegate("/updateProd",{
+                state:{id:idProducto}
+            })
         }
 
     };
