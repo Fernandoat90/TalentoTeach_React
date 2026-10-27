@@ -29,7 +29,7 @@ export function ControlDelUp(){
 
     return(
         <div>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={(evento) => evento.preventDefault()}>
                 <h2>Administrar producto</h2>
 
             <input
