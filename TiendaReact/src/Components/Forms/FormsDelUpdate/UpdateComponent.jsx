@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { supabase } from "../../../supabaseClient";
+import styles from "../Form.module.css";
 
 export function UpdateProduct() {
     const location = useLocation();
@@ -160,13 +161,16 @@ export function UpdateProduct() {
 
     return (
         <section>
+            
+            <form onSubmit={updateProd} className={styles.form}>
+            
             <h2>Actualizar producto</h2>
 
             <p>
                 <strong>ID:</strong> {producto.id}
             </p>
 
-            <form onSubmit={updateProd}>
+            
                 <div>
                     <label htmlFor="nombre">Nombre:</label>
                     <input
