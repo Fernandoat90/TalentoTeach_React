@@ -207,16 +207,6 @@ export function UpdateProduct() {
                     />
                 </div>
 
-                <div>
-                    <label htmlFor="urlImagen">URL de la imagen:</label>
-                    <input
-                        id="urlImagen"
-                        name="urlImagen"
-                        type="url"
-                        value={producto.urlImagen}
-                        onChange={manejarCambio}
-                    />
-                </div>
 
                 {producto.urlImagen && (
                     <div>
@@ -224,11 +214,6 @@ export function UpdateProduct() {
                         <img
                             src={producto.urlImagen}
                             alt={producto.nombre}
-                            style={{
-                                width: "200px",
-                                height: "180px",
-                                objectFit: "contain"
-                            }}
                         />
                     </div>
                 )}
